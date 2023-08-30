@@ -6,7 +6,9 @@
 ?>
 <?php get_header(); ?>
 
-<div class="container">
+
+<section class="page-wrap">
+    <div class="container">
 
     <h1><?php the_title(); ?></h1>
 
@@ -25,7 +27,8 @@
         </div>
 
     </div>
-    
-</div>
+
+    </div>
+</section>
 
 <?php get_footer(); ?>
