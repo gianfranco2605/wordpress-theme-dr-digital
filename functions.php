@@ -30,6 +30,8 @@ add_action('wp_enqueue_scripts', 'load_js');
 
 // Theme options activate it
 add_theme_support('menus');
+// images in backend
+add_theme_support('post-thumbnails');
 
 //Menu Location
 register_nav_menus(
@@ -40,3 +42,7 @@ register_nav_menus(
         'footer-menu' => 'Footer Menu Location',
     )
 );
+
+// Custom image size
+add_image_size('blog-large', 800, 400, true);
+add_image_size('blog-small', 300, 200, true);
